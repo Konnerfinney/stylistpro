@@ -19,8 +19,8 @@ const Sidebar: React.FC = () => {
         
         <nav>
           <ul className="space-y-4">
-            <SideLink href="/overview">Overview</SideLink>
-            <SideLink href="/transactions">Transactions</SideLink>
+            <SideLink href="/dashboard">Overview</SideLink>
+            <SideLink href="/Appointments">Appointments</SideLink>
             <SideLink href="/customers">Customers</SideLink>
             <SideLink href="/reports">Reports</SideLink>
             <SideLink href="/settings">Settings</SideLink>
