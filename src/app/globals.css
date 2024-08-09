@@ -31,3 +31,82 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@layer utilities {
+  .bg-ash-gray {
+    background-color: #96bbbbff;
+  }
+  .bg-hookers-green {
+    background-color: #618985ff;
+  }
+  .bg-black-olive {
+    background-color: #414535ff;
+  }
+  .bg-dutch-white {
+    background-color: #f2e3bcff;
+  }
+  .bg-lion {
+    background-color: #c19875ff;
+  }
+
+  .bg-ash-gray-hsl {
+    background-color: hsla(180, 21%, 66%, 1);
+  }
+  .bg-hookers-green-hsl {
+    background-color: hsla(174, 17%, 46%, 1);
+  }
+  .bg-black-olive-hsl {
+    background-color: hsla(75, 13%, 24%, 1);
+  }
+  .bg-dutch-white-hsl {
+    background-color: hsla(43, 67%, 84%, 1);
+  }
+  .bg-lion-hsl {
+    background-color: hsla(28, 38%, 61%, 1);
+  }
+
+  .bg-ash-gray-rgba {
+    background-color: rgba(150, 187, 187, 1);
+  }
+  .bg-hookers-green-rgba {
+    background-color: rgba(97, 137, 133, 1);
+  }
+  .bg-black-olive-rgba {
+    background-color: rgba(65, 69, 53, 1);
+  }
+  .bg-dutch-white-rgba {
+    background-color: rgba(242, 227, 188, 1);
+  }
+  .bg-lion-rgba {
+    background-color: rgba(193, 152, 117, 1);
+  }
+
+  .bg-gradient-top {
+    background: linear-gradient(0deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-right {
+    background: linear-gradient(90deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-bottom {
+    background: linear-gradient(180deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-left {
+    background: linear-gradient(270deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-top-right {
+    background: linear-gradient(45deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-bottom-right {
+    background: linear-gradient(135deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-top-left {
+    background: linear-gradient(225deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-bottom-left {
+    background: linear-gradient(315deg, #96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+  .bg-gradient-radial {
+    background: radial-gradient(#96bbbbff, #618985ff, #414535ff, #f2e3bcff, #c19875ff);
+  }
+}
