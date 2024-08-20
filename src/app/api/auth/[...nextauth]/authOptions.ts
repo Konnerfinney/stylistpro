@@ -11,10 +11,24 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   callbacks: {
-    async session({ session, token, user }) {
-      // Add custom session properties if needed
+    async session({ session, token }) {
+      // Attach only necessary user information to the session
+      // Do not attach the access token
+      console.log(session);
+      session.user = token?.user as any;
       return session;
     },
+
+    async jwt({ token, account }){
+      //console.log(token);
+      if (account){
+        token.accessToken = account.access_token;
+      }
+      return token;
+    }
+  },
+  session: {
+    strategy: "jwt",
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
